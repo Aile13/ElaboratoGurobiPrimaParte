@@ -2,53 +2,68 @@ package it.unibs.eliapitozzi.ro;
 
 import gurobi.*;
 import gurobi.GRB.*;
+import it.unibs.eliapitozzi.ro.defproblema.DatiProblema;
+import it.unibs.eliapitozzi.ro.fileoutput.RisposteQuesiti;
 
-public class Main
-{
+public class Main {
 
-	private static final String PROBLEM_FILE_LP =
-			"GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp";
+    private static final String PROBLEM_FILE_LP =
+            "GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp";
 
-	public static void main(String[] args)
-	{
-		try
-		{
-			// Creo ambiente e setto impostazioni
-			GRBEnv env = new GRBEnv("elaboratoGurobi.log");
+    public static void main(String[] args) {
+        try {
+            // Leggo dati da file istanza, costruisco file lp.
+            //DatiProblema datiProblema = new DatiProblema();
 
-			env.set(IntParam.Presolve, 0);
-			env.set(IntParam.Method, 0);
-			env.set(DoubleParam.Heuristics, 0.);
-			env.set(DoubleParam.TimeLimit, 180); // max 3 min di attesa
+            // Creo ambiente e setto impostazioni
+            GRBEnv env = new GRBEnv("elaboratoGurobi.log");
 
-
-			// Creo model problema da file lp
-			GRBModel model = new GRBModel(env, PROBLEM_FILE_LP);
-
-			// Ottimizza il modello
-			model.optimize();
+            env.set(IntParam.Presolve, 0);
+            env.set(IntParam.Method, 0);
+            env.set(DoubleParam.Heuristics, 0.);
+            env.set(DoubleParam.TimeLimit, 180); // max 3 min di attesa
 
 
+            // Creo model problema da file lp
+            GRBModel model = new GRBModel(env, PROBLEM_FILE_LP);
 
-			// Estraggo varibili e mostro
-			GRBVar[] vars = model.getVars();
+            // Ottimizza il modello
+            model.optimize();
 
-			System.out.println("\nVariabili di modello:");
+            // status esecuzione
+            System.out.println(
+            		"Esito esecuzione: " +
+							(model.get(IntAttr.Status) == Status.OPTIMAL ?
+                            "Soluzione ottimale trovata.\n" :
+                            "Soluzione ottimale non trovata.\n")
+            );
+            // Estraggo varibili e mostro
+            GRBVar[] vars = model.getVars();
 
-			for (GRBVar var : vars) {
-				System.out.printf("%s = %.04f\n",
-						var.get(StringAttr.VarName), var.get(DoubleAttr.X));
-			}
+            System.out.println("\nVariabili di modello e loro valore:");
+
+            for (GRBVar var : vars) {
+                System.out.printf("%s = %.04f\n",
+                        var.get(StringAttr.VarName), var.get(DoubleAttr.X));
+            }
 
 
+            // Estraggo funz obiettivo e mostro
+            double objVal = model.get(DoubleAttr.ObjVal);
+            System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
 
-			// Estraggo funz obiettivo e mostro
-			double objVal = model.get(DoubleAttr.ObjVal);
-			System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
+            // Libera le risorse associate a modello ed env
+            model.dispose();
+            env.dispose();
 
-			// Libera le risorse associate a modello ed env
-			model.dispose();
-			env.dispose();
+            // Stampa il file di output risposte ai quesiti
+            RisposteQuesiti risposteQuesiti = new RisposteQuesiti(
+                    objVal,
+                    vars
+                    );
+
+            risposteQuesiti.stampaFileRisposte();
+
 
 			/*// Creazione delle variabili
 			GRBVar x = model.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "x");
@@ -94,9 +109,8 @@ public class Main
 			System.out.println("Obj: " + model.get(GRB.DoubleAttr.ObjVal));
 			*/
 
-		} catch (GRBException e)
-		{
-			System.out.println("Error code: " + e.getErrorCode() + ". " + e.getMessage());
-		}
-	}
+        } catch (GRBException e) {
+            System.out.println("Error code: " + e.getErrorCode() + ". " + e.getMessage());
+        }
+    }
 }
