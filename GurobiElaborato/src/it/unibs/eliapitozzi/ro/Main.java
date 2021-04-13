@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Leggo dati da file istanza, costruisco file lp.
-            //DatiProblema datiProblema = new DatiProblema();
+            DatiProblema datiProblema = new DatiProblema();
 
             // Creo ambiente e setto impostazioni
             GRBEnv env = new GRBEnv("elaboratoGurobi.log");
@@ -27,15 +27,18 @@ public class Main {
             // Creo model problema da file lp
             GRBModel model = new GRBModel(env, PROBLEM_FILE_LP);
 
+            // Imposto nome modello
+            model.set(GRB.StringAttr.ModelName , " pc balancer ");
+
             // Ottimizza il modello
             model.optimize();
 
             // status esecuzione
             System.out.println(
-            		"Esito esecuzione: " +
+            		"\nEsito esecuzione: " +
 							(model.get(IntAttr.Status) == Status.OPTIMAL ?
-                            "Soluzione ottimale trovata.\n" :
-                            "Soluzione ottimale non trovata.\n")
+                            "Soluzione ottimale trovata." :
+                            "Soluzione ottimale non trovata.")
             );
             // Estraggo varibili e mostro
             GRBVar[] vars = model.getVars();
@@ -47,23 +50,17 @@ public class Main {
                         var.get(StringAttr.VarName), var.get(DoubleAttr.X));
             }
 
-
             // Estraggo funz obiettivo e mostro
-            double objVal = model.get(DoubleAttr.ObjVal);
-            System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
+            //double objVal = model.get(DoubleAttr.ObjVal);
+            //  System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
+
+            // Stampa il file di output risposte ai quesiti
+            //RisposteQuesiti risposteQuesiti = new RisposteQuesiti(model, datiProblema);
+            //risposteQuesiti.stampaFileRisposte();
 
             // Libera le risorse associate a modello ed env
             model.dispose();
             env.dispose();
-
-            // Stampa il file di output risposte ai quesiti
-            RisposteQuesiti risposteQuesiti = new RisposteQuesiti(
-                    objVal,
-                    vars
-                    );
-
-            risposteQuesiti.stampaFileRisposte();
-
 
 			/*// Creazione delle variabili
 			GRBVar x = model.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "x");

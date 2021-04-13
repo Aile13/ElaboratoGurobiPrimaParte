@@ -1257,3 +1257,2941 @@ Solution count 1: 5
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 17:51:15 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x47434d00
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    1          -    5.50000      -     -    0s
+*    0     0               0       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (2 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:34:28 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x47434d00
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    1          -    5.50000      -     -    0s
+*    0     0               0       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (2 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:46:47 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x47434d00
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    1          -    5.50000      -     -    0s
+*    0     0               0       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (2 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:47:22 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x47434d00
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    1          -    5.50000      -     -    0s
+*    0     0               0       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (2 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:47:54 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x47434d00
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Variable types: 0 continuous, 3 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 1 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    1          -    5.50000      -     -    0s
+*    0     0               0       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (2 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:48:34 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 9
+Unrecognized constraint RHS or sense
+Neighboring tokens: " >= x1 w >= x2 w >= x3 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:49:59 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 41
+Unrecognized constraint RHS or sense
+Neighboring tokens: " >= x1 w >= x2 w >= x3 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:51:46 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 9
+Unrecognized constraint RHS or sense
+Neighboring tokens: " >= x1 w >= x2 w >= x3 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:52:55 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Malformed term in expression
+Neighboring tokens: " ( x1 * 700 ) / (6,60 + 0,60) + "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:58:32 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Malformed term in expression
+Neighboring tokens: " ( x1 * 700 ) / (6,60 + 0,60) + "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:59:00 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Unrecognized token in quadratic expression
+Neighboring tokens: " [ 6,60 + 0,60 ] + [ x2 * 700 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 18:59:42 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Unrecognized token in quadratic expression
+Neighboring tokens: " ( 6,60 + 0,60 ) + [ x2 * 700 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:02:40 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Malformed quadratic term in expression
+Neighboring tokens: " 700 x1 ] / ( 6,60 + 0,60 ) + "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:03:29 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Malformed term in expression
+Neighboring tokens: " 700 x1 / ( 6,60 + 0,60 ) + 700 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:05:31 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 55
+Malformed term in expression
+Neighboring tokens: " 700 / ( 6,60 + 0,60 ) x1 + 700 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:16:00 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 58
+Unrecognized token in quadratic expression
+Neighboring tokens: " ( 1,90 + 2,00 ) <= 77 Bounds "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:16:55 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 58
+Malformed term in expression
+Neighboring tokens: " + <= 77 Bounds 0.0 <= x1 <= "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Sun Apr 11 19:18:00 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 17 columns, 80 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 17 columns and 80 nonzeros
+Model fingerprint: 0xc7f8d06a
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [3e+00, 8e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.280000e+02   1.600000e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 17:56:22 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 17 columns, 80 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 17 columns and 80 nonzeros
+Model fingerprint: 0xc7f8d06a
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [3e+00, 8e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.280000e+02   1.600000e+07      0s
+
+Solved in 17 iterations and 0.01 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:10:05 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Duplicate section found (read 'MAX') - Is a variable name equal to an LP file format keyword?
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 3
+Malformed term in expression
+Neighboring tokens: " ( x17 + x17 + x17 + x17 + x17 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:10:28 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Duplicate section found (read 'MAX') - Is a variable name equal to an LP file format keyword?
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 3
+Malformed term in expression
+Neighboring tokens: " ( x1 + x2 + x3 + x4 + x5 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:11:07 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Duplicate section found (read 'MAX') - Is a variable name equal to an LP file format keyword?
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 3
+Malformed term in expression
+Neighboring tokens: " ( x1 , x2 , x3 , x4 , x5 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:12:37 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 4
+Malformed term in expression
+Neighboring tokens: " w w = MAX ( x1 , x2 , "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:13:24 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 6
+Unrecognized constraint RHS or sense
+Neighboring tokens: " = MAX ( x1 , x2 , x3 , x4 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:14:10 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 6
+Unrecognized constraint RHS or sense
+Neighboring tokens: " = MAX ( x1 , x2 , x3 , x4 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:25:12 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 73
+Unrecognized variable bound
+Neighboring tokens: " w = MAX ( x1 , x2 , x3 , "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:26:52 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 17 columns, 80 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 17 columns and 80 nonzeros
+Model fingerprint: 0x632dfba8
+Model has 1 general constraint
+Variable types: 17 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 33 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:28:13 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 17 columns, 48 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 17 columns and 48 nonzeros
+Model fingerprint: 0xb6a6ce80
+Model has 1 general constraint
+Variable types: 17 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 33 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:29:53 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 17 columns, 48 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 17 columns and 48 nonzeros
+Model fingerprint: 0xc703353c
+Model has 1 general constraint
+Variable types: 17 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 2e+01]
+Variable types: 33 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:37:04 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 8
+Malformed term in expression
+Neighboring tokens: " 3,00>= 0 x1 <= 17,00 x2 -3,00>= 0 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:37:42 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:39:04 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 1 rows, 17 columns, 16 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 1 rows, 17 columns and 16 nonzeros
+Model fingerprint: 0x93570eb7
+Model has 1 general constraint
+Variable types: 17 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [3e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+00, 2e+01]
+  RHS range        [1e-01, 1e-01]
+Variable types: 33 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:39:45 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:41:52 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:42:41 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:43:34 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:50:35 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:51:39 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:52:06 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:53:05 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:54:02 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:54:28 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:54:50 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:55:20 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:56:07 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:57:08 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:57:25 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:57:55 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:58:58 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 18:59:47 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:00:56 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:03:17 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:03:40 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:04:18 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:04:30 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:07:12 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:07:57 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:08:59 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:09:47 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 33 rows, 18 columns, 64 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 33 rows, 18 columns and 64 nonzeros
+Model fingerprint: 0xb7d64de0
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:10:42 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:14:34 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0xb8f2dcba
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [3e+00, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:15:08 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:22:50 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:23:20 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:30:11 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:32:25 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:32:50 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Mon Apr 12 19:33:25 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:22:28 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3.0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0xdbca32fc
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:23:08 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3.0') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.02 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:26:19 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:28:03 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:28:41 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:30:18 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x8df0d962
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 09:41:18 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 80 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 80 nonzeros
+Model fingerprint: 0x156e7ed3
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 2e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:16:45 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 53
+Unrecognized constraint RHS or sense
+Neighboring tokens: " <= 77 93,33 x2 <= 77 83,33 x3 <= 77 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:17:06 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 64 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 64 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0x090ebae2
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 8e+01]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Root relaxation: objective 0.000000e+00, 0 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:21:41 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 64 rows, 18 columns, 96 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 64 rows, 18 columns and 96 nonzeros
+Model fingerprint: 0xbdf73429
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 8e+01]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:29:49 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 19 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 19 columns and 112 nonzeros
+Model fingerprint: 0x150ec752
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:30:54 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:32:27 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:35:12 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:38:33 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:39:23 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:39:36 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:41:17 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 67 rows, 20 columns, 114 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 67 rows, 20 columns and 114 nonzeros
+Model fingerprint: 0x113e074a
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [1e-01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:42:34 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 56
+Malformed term in expression
+Neighboring tokens: " tot 700.0000000000001 97,22 x1 <= 77 93,33 x2 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:42:53 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:44:41 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:45:41 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 49 rows, 18 columns, 80 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 49 rows, 18 columns and 80 nonzeros
+Model fingerprint: 0x450e1c58
+Model has 1 general constraint
+Variable types: 18 continuous, 0 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Variable types: 34 continuous, 16 integer (16 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:46:56 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:50:39 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:54:11 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x921b3935
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.220969e+03   4.757813e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:54:39 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:58:10 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 10:58:51 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xeb74c56c
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.320969e+03   5.207812e+07      0s
+
+Solved in 20 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 11:43:02 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.01 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 11:54:44 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xd7687872
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.448672e+03   2.934521e+07      0s
+
+Solved in 16 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 11:55:06 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 12:01:49 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.03 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 12:05:00 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Duplicate section found (read 'MAX') - Is a variable name equal to an LP file format keyword?
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 2
+Malformed term in expression
+Neighboring tokens: " ( x1, x2, x3, x4, x5, x6, x7, x8, x9, "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 12:05:10 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Duplicate section found (read 'MAX') - Is a variable name equal to an LP file format keyword?
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 2
+Malformed term in expression
+Neighboring tokens: " ( x1 , x2 , x3 , x4 , x5 "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 12:22:21 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 12:23:39 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Presolve removed 48 rows and 1 columns
+Presolve time: 0.01s
+
+Solved in 0 iterations and 0.01 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 13:03:40 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:06:03 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.01 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.01 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:12:19 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x7d6d5e51
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:17:15 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:18:04 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Error reading LP format file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp at line 0
+LP format file must begin with a keyword
+Neighboring tokens: " DatiProblema{reteComputer=[ComputerModel{alfa=6.6, "
+
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:19:42 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0x830410f8
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.548672e+03   3.142334e+07      0s
+
+Solved in 17 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 9.1.1 (win64, Java) logging started Tue Apr 13 14:21:09 2021
+
+Academic license - for non-commercial use only - expires 2021-04-30
+Warning: Numeric variable name in LP file ('3,00') - often the result
+         of a constant term in the left-hand side of a constraint.
+
+Read LP format model from file GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp
+Reading time = 0.00 seconds
+: 65 rows, 18 columns, 112 nonzeros
+Gurobi Optimizer version 9.1.1 build v9.1.1rc0 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 65 rows, 18 columns and 112 nonzeros
+Model fingerprint: 0xad3159a5
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+02, 1e+02]
+  RHS range        [2e+01, 1e+02]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.304375e+02   5.131250e+07      0s
+      25    7.5756257e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 25 iterations and 0.01 seconds
+Optimal objective  7.575625731e+00

@@ -7,6 +7,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Legge file fornito e costruisce il modello in formato lp.
+ *
  * @author Elia
  */
 public class DatiProblema {
@@ -31,48 +33,65 @@ public class DatiProblema {
         elaboraFileModelloLP();
     }
 
+    public int getN() {
+        return n;
+    }
+
     private void elaboraFileModelloLP() {
-        PrintWriter w = null;
+
+        PrintWriter w;
         try {
             w = new PrintWriter(MODEL_FILE_PATH);
 
-            // PrintStream w = System.out;
             // Stampa descrizione file
             w.println("\\ LP file per definizione problema ottimizzazione di elaborato");
             w.println("\\ Variabili tutte continue");
 
 
             // Stampa def problema in formato lp
-            w.println("\nMinimize\n w");
 
-            w.println("\nSubject To");
+            // Stampa funzione obiettivo
+            w.println("\nMinimize w ");
 
+            // Aggiungo vincoli
+            w.println("Subject To");
+
+            // Vincolo w >= xi
             for (int i = 0; i < n; i++) {
-                w.printf("  w >= x%d\n", i + 1);
+                w.printf("  w - x%d >= 0\n", i + 1);
             }
 
+            // Vincolo estremi percentuali forniti per ogni xi, entro omega e teta
             for (int i = 0; i < n; i++) {
-                w.printf("  x%d >= %.02f\n", i + 1, omega);
+                w.printf("  x%d - %.02f >= 0\n", i + 1, omega);
                 w.printf("  x%d <= %.02f\n", i + 1, teta);
             }
 
-            int totDatiInGB = (int) (h * g * 1000);
-
+            // Vincolo per percentuale totale, tutte le xi insieme danno 100%
+            w.print(" "); // Salta uno spazio.
             for (int i = 0; i < n - 1; i++) {
-                w.printf("( x%d * %d ) / (%.02f + %.02f) + ", i + 1, totDatiInGB,
-                        reteComputer.get(i).getAlfa(), reteComputer.get(i).getBeta());
+                w.printf(" x%d +", i + 1);
+            }
+            w.printf(" x%d = 100,0\n", n);
+
+            // Vincolo temporale, tempo di esecuzione massimo ammesso
+            double totDatiInGB = h * g * 1000;
+
+            // Calcolo coefficiente per ogni xi
+            // (xi * 100 * totDati / alfa)  +  (xi * 100 * totDati / beta)
+            // ho raccolto 100 e totDati
+            for (int i = 0; i < n ; i++) {
+                double coef = totDatiInGB / 100 * (1. / reteComputer.get(i).getAlfa() + 1. / reteComputer.get(i).getBeta());
+                w.printf("  %.02f x%d <= %d\n", coef, i + 1, tau);
             }
 
-            w.printf("( x%d * %d ) / (%.02f + %.02f)", n, totDatiInGB,
-                    reteComputer.get(n - 1).getAlfa(), reteComputer.get(n - 1).getBeta());
-
-            w.println(" <= " + tau);
-
-            w.println("\nBounds");
+            // Aggiungo intervallo di validita variabili xi, tra 0 e 100, perchè percentuale
+            w.println("Bounds");
             for (int i = 0; i < n; i++) {
-                w.printf("0.0 <= x%d <= 100.0\n", i + 1);
+                w.printf("  0,0 <= x%d <= 100,0\n", i + 1);
             }
 
+            // Concludo file LP
             w.println("\nEnd");
 
             w.close();
@@ -120,7 +139,7 @@ public class DatiProblema {
 
     private ArrayList<String> parseIntsAndFloats(String raw) {
 
-        ArrayList<String> listBuffer = new ArrayList<String>();
+        ArrayList<String> listBuffer = new ArrayList<>();
 
         Pattern p = Pattern.compile("[0-9]*\\.?[0-9]+");
 

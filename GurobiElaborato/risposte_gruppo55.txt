@@ -1,7 +1,0 @@
-GRUPPO 55
-Componenti: Elia Pitozzi
-
-
-QUESITO I:
-funzione obiettivo = 5,0000
-soluzione di base ottima: [

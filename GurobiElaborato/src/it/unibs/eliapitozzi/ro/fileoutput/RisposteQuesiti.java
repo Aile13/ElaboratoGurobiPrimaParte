@@ -2,7 +2,8 @@ package it.unibs.eliapitozzi.ro.fileoutput;
 
 import gurobi.GRB;
 import gurobi.GRBException;
-import gurobi.GRBVar;
+import gurobi.GRBModel;
+import it.unibs.eliapitozzi.ro.defproblema.DatiProblema;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -13,12 +14,12 @@ import java.io.PrintWriter;
  * @author Elia
  */
 public class RisposteQuesiti {
-    double valoreFunzObbiettivo;
-    GRBVar[] soluzDiBaseOttima;
+    private GRBModel model;
+    private DatiProblema datiProblema;
 
-    public RisposteQuesiti(double valoreFunzObbiettivo, GRBVar[] soluzioneDiBaseOttima) {
-        this.valoreFunzObbiettivo = valoreFunzObbiettivo;
-        this.soluzDiBaseOttima = soluzioneDiBaseOttima;
+    public RisposteQuesiti(GRBModel model, DatiProblema datiProblema) {
+        this.model = model;
+        this.datiProblema = datiProblema;
     }
 
     public void stampaFileRisposte() {
@@ -32,18 +33,29 @@ public class RisposteQuesiti {
 
             // Stampa risposta quesito 1
             writer.println("QUESITO I:");
-            writer.printf("funzione obiettivo = %.04f\n", valoreFunzObbiettivo);
+            writer.printf("funzione obiettivo = %.04f\n", model.get(GRB.DoubleAttr.ObjVal));
 
-            writer.println("soluzione di base ottima: [");
-            /*for (int i = 0; i < soluzDiBaseOttima.length - 1; i++) {
-                writer.printf("%.04f, ", soluzDiBaseOttima[i].get(GRB.DoubleAttr.X));
+            writer.print("soluzione di base ottima: [");
+            for (int i = 0; i < datiProblema.getN() - 1; i++) {
+                writer.printf("%.04f, ", model.getVarByName(String.format("x%d", i + 1)).get(GRB.DoubleAttr.X));
             }
             writer.printf("%.04f]\n",
-                    soluzDiBaseOttima[soluzDiBaseOttima.length - 1].get(GRB.DoubleAttr.X));
+                    model.getVarByName(String.format("x%d", datiProblema.getN())).get(GRB.DoubleAttr.X));
+
+
+            // Stampa risposta quesito 2
+            /*writer.print("varibili di base: [");
+            for (int i = 0; i < datiProblema.getN() - 1; i++) {
+                writer.print(model.getVarByName(String.format("x%d", i + 1))
+                        .get(GRB.IntAttr.VBasis) == 0 ? "1 " : "0 ");
+            }
+            writer.print(model.getVarByName(String.format("x%d", datiProblema.getN()))
+                    .get(GRB.IntAttr.VBasis) == 0 ? "1]" : "0]");
 */
+
             writer.close();
 
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException | GRBException e) {
             e.printStackTrace();
         }
     }
