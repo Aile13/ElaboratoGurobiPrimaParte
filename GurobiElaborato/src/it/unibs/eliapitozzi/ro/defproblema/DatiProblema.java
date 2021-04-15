@@ -16,6 +16,10 @@ public class DatiProblema {
     private static final String DATA_FILE_PATH = "GurobiElaborato/fileForniti/istanza_singolo55.txt";
     private static final String MODEL_FILE_PATH = "GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp";
 
+    /**
+     * h, n, g, omega, teta, tau e la lista computer sono forniti dal testo.
+     * k è numero di var originali del pb.
+     */
     List<ComputerModel> reteComputer = new ArrayList<>();
     private int h;
     private int n;
@@ -23,6 +27,7 @@ public class DatiProblema {
     private double omega;
     private double teta;
     private int tau;
+    private int k;
 
     /**
      * Costruisce l'istanza dalla lettura del file fornito.
@@ -30,11 +35,19 @@ public class DatiProblema {
      */
     public DatiProblema() {
         leggiEEstraiDati();
+        // k è il numero di variabili originali del problema
+        // Calcolato sommando al numero di var decisionali associato ai pc la var w
+        k = reteComputer.size() + 1;
+
         elaboraFileModelloLP();
     }
 
     public int getN() {
         return n;
+    }
+
+    public int getK() {
+        return k;
     }
 
     private void elaboraFileModelloLP() {
@@ -51,39 +64,60 @@ public class DatiProblema {
             // Stampa def problema in formato lp
 
             // Stampa funzione obiettivo
-            w.println("\nMinimize w ");
+            w.println("\nMinimize w\n");
 
             // Aggiungo vincoli
             w.println("Subject To");
 
             // Vincolo w >= xi
             for (int i = 0; i < n; i++) {
-                w.printf("  w - x%d >= 0\n", i + 1);
+                String label = String.format("  c_di_w_e_x%d: ", i + 1);
+                w.printf(label + "w - x%d >= 0\n", i + 1);
             }
+
+            // Salto riga tra un tipo di vincolo e un altro
+            w.println();
 
             // Vincolo estremi percentuali forniti per ogni xi, entro omega e teta
             for (int i = 0; i < n; i++) {
-                w.printf("  x%d - %.02f >= 0\n", i + 1, omega);
-                w.printf("  x%d <= %.02f\n", i + 1, teta);
+                String labelEstrMin = String.format("  c_di_x%d_e_omega: ", i + 1);
+                String labelEstrMax = String.format("  c_di_x%d_e_teta: ", i + 1);
+
+                w.printf(labelEstrMin + "x%d - %.02f >= 0\n", i + 1, omega);
+                w.printf(labelEstrMax + "x%d <= %.02f\n", i + 1, teta);
             }
 
+            // Salto riga tra un tipo di vincolo e un altro
+            w.println();
+
             // Vincolo per percentuale totale, tutte le xi insieme danno 100%
-            w.print(" "); // Salta uno spazio.
+            w.print("  c_delle_xi_somma_delle_percentuali:");
             for (int i = 0; i < n - 1; i++) {
                 w.printf(" x%d +", i + 1);
             }
             w.printf(" x%d = 100,0\n", n);
+
+            // Salto riga tra un tipo di vincolo e un altro
+            w.println();
 
             // Vincolo temporale, tempo di esecuzione massimo ammesso
             double totDatiInGB = h * g * 1000;
 
             // Calcolo coefficiente per ogni xi
             // (xi * 100 * totDati / alfa)  +  (xi * 100 * totDati / beta)
-            // ho raccolto 100 e totDati
-            for (int i = 0; i < n ; i++) {
-                double coef = totDatiInGB / 100 * (1. / reteComputer.get(i).getAlfa() + 1. / reteComputer.get(i).getBeta());
-                w.printf("  %.02f x%d <= %d\n", coef, i + 1, tau);
+            // Ho raccolto 100 e totDati, poi calcolato la somma dei reciproci di alfa e beta
+            for (int i = 0; i < n; i++) {
+
+                double coef = totDatiInGB / 100 *
+                        (1. / reteComputer.get(i).getAlfa() + 1. / reteComputer.get(i).getBeta());
+
+                String label = String.format("  c_di_x%d_tempo_max_esec:  ", i + 1);
+
+                w.printf(label + "%.02f x%d <= %d\n", coef, i + 1, tau);
             }
+
+            // Salto riga tra un tipo di vincolo e un altro
+            w.println();
 
             // Aggiungo intervallo di validita variabili xi, tra 0 e 100, perchè percentuale
             w.println("Bounds");
@@ -91,8 +125,11 @@ public class DatiProblema {
                 w.printf("  0,0 <= x%d <= 100,0\n", i + 1);
             }
 
+            // Salto riga
+            w.println();
+
             // Concludo file LP
-            w.println("\nEnd");
+            w.println("End");
 
             w.close();
 

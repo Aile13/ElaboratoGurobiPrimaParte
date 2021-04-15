@@ -1,7 +1,6 @@
 package it.unibs.eliapitozzi.ro;
 
 import gurobi.*;
-import gurobi.GRB.*;
 import it.unibs.eliapitozzi.ro.defproblema.DatiProblema;
 import it.unibs.eliapitozzi.ro.fileoutput.RisposteQuesiti;
 
@@ -18,93 +17,53 @@ public class Main {
             // Creo ambiente e setto impostazioni
             GRBEnv env = new GRBEnv("elaboratoGurobi.log");
 
-            env.set(IntParam.Presolve, 0);
-            env.set(IntParam.Method, 0);
-            env.set(DoubleParam.Heuristics, 0.);
-            env.set(DoubleParam.TimeLimit, 180); // max 3 min di attesa
+            env.set(GRB.IntParam.Presolve, 0);
+            env.set(GRB.IntParam.Method, 0);
+            env.set(GRB.DoubleParam.Heuristics, 0.);
+            env.set(GRB.DoubleParam.TimeLimit, 180); // max 3 min di attesa
 
 
             // Creo model problema da file lp
             GRBModel model = new GRBModel(env, PROBLEM_FILE_LP);
 
             // Imposto nome modello
-            model.set(GRB.StringAttr.ModelName , " pc balancer ");
+            model.set(GRB.StringAttr.ModelName, " pc bank balancer ");
 
             // Ottimizza il modello
             model.optimize();
 
-            // status esecuzione
+            // Status esecuzione
             System.out.println(
-            		"\nEsito esecuzione: " +
-							(model.get(IntAttr.Status) == Status.OPTIMAL ?
-                            "Soluzione ottimale trovata." :
-                            "Soluzione ottimale non trovata.")
+                    "\nEsito esecuzione: " +
+                            (model.get(GRB.IntAttr.Status) == GRB.Status.OPTIMAL ?
+                                    "Soluzione ottimale trovata." :
+                                    "Soluzione ottimale non trovata.")
             );
+
             // Estraggo varibili e mostro
             GRBVar[] vars = model.getVars();
-
             System.out.println("\nVariabili di modello e loro valore:");
 
             for (GRBVar var : vars) {
-                System.out.printf("%s = %.04f\n",
-                        var.get(StringAttr.VarName), var.get(DoubleAttr.X));
+                System.out.printf("%s = %.04f in base: %d CCr: %.02f, in model: %d\n",
+                        var.get(GRB.StringAttr.VarName), var.get(GRB.DoubleAttr.X), var.get(GRB.IntAttr.VBasis), var.get(GRB.DoubleAttr.RC), var.index());
             }
 
-            // Estraggo funz obiettivo e mostro
-            //double objVal = model.get(DoubleAttr.ObjVal);
-            //  System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
 
-            // Stampa il file di output risposte ai quesiti
-            //RisposteQuesiti risposteQuesiti = new RisposteQuesiti(model, datiProblema);
-            //risposteQuesiti.stampaFileRisposte();
+            // Estraggo funz obiettivo e mostro
+            double objVal = model.get(GRB.DoubleAttr.ObjVal);
+            System.out.printf("\nValore funzione obiettivo: %.04f\n", objVal);
+
+            System.out.println(model.getJSONSolution());
+
+
+            // Stampa il file di output, risposte ai quesiti
+            RisposteQuesiti risposteQuesiti = new RisposteQuesiti(model, datiProblema);
+            risposteQuesiti.stampaFileRisposte();
 
             // Libera le risorse associate a modello ed env
             model.dispose();
             env.dispose();
-
-			/*// Creazione delle variabili
-			GRBVar x = model.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "x");
-			GRBVar y = model.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "y");
-			GRBVar z = model.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "z");
-			
-			// Aggiunta della funzione obiettivo: max x + y + 2 z
-			GRBLinExpr expr = new GRBLinExpr();
-			expr.addTerm(1.0, x);
-			expr.addTerm(1.0, y);
-			expr.addTerm(2.0, z);
-			model.setObjective(expr, GRB.MAXIMIZE);
-			
-			// Aggiunta del vincolo: x + 2 y + 3 z <= 4
-			expr = new GRBLinExpr();
-			expr.addTerm(1.0, x);
-			expr.addTerm(2.0, y);
-			expr.addTerm(3.0, z);
-			model.addConstr(expr, GRB.LESS_EQUAL, 4.0, "c0");
-			
-			// Aggiunta del vincolo: x + y >= 1
-			expr = new GRBLinExpr();
-			expr.addTerm(1.0, x);
-			expr.addTerm(1.0, y);
-			model.addConstr(expr, GRB.LESS_EQUAL, 1.0, "c1");
-			*/
-
-
-			/*
-			System.out.println(x.get(GRB.StringAttr.VarName) + " " + x.get(GRB.DoubleAttr.X));
-			System.out.println(y.get(GRB.StringAttr.VarName) + " " + y.get(GRB.DoubleAttr.X));
-			System.out.println(z.get(GRB.StringAttr.VarName) + " " + z.get(GRB.DoubleAttr.X));
-			System.out.println("Obj: " + model.get(GRB.DoubleAttr.ObjVal));
-			
-			
-			
-			System.out.println(model.getVarByName("x").get(GRB.StringAttr.VarName) + " "
-					+ model.getVarByName("x").get(GRB.DoubleAttr.X) + " RC: " + model.getVarByName("x").get(GRB.DoubleAttr.RC));
-			System.out.println(model.getVarByName("y").get(GRB.StringAttr.VarName) + " "
-					+ model.getVarByName("y").get(GRB.DoubleAttr.X) + " RC: " + model.getVarByName("y").get(GRB.DoubleAttr.RC));
-			System.out.println(model.getVarByName("z").get(GRB.StringAttr.VarName) + " " 
-					+ model.getVarByName("z").get(GRB.DoubleAttr.X) + " RC: " + model.getVarByName("z").get(GRB.DoubleAttr.RC));
-			System.out.println("Obj: " + model.get(GRB.DoubleAttr.ObjVal));
-			*/
 
         } catch (GRBException e) {
             System.out.println("Error code: " + e.getErrorCode() + ". " + e.getMessage());
