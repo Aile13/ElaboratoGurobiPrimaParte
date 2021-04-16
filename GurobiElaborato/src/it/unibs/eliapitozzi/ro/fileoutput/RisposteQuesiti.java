@@ -14,9 +14,9 @@ import java.util.List;
  * @author Elia
  */
 public class RisposteQuesiti {
-    private static final String PATH_ANSWER_FILE = "GurobiElaborato/risposte_gruppo55.txt";
-    private GRBModel model;
-    private DatiProblema datiPb;
+    private static final String PATH_ANSWER_FILE = "risposte_gruppo55.txt";
+    private final GRBModel model;
+    private final DatiProblema datiPb;
 
     public RisposteQuesiti(GRBModel model, DatiProblema datiProblema) {
         this.model = model;
@@ -40,37 +40,57 @@ public class RisposteQuesiti {
 
             // Ciclo sui primi k elementi del vettore vars, ovvero le mie var originali
             writer.print("soluzione di base ottima: [");
-            for (int i = 0; i < datiPb.getK() - 1; i++) {
-                writer.printf("%.04f, ", model.getVar(i).get(GRB.DoubleAttr.X));
+            // Ciclo sulle var originali
+            for (GRBVar var : model.getVars()) {
+                writer.printf("%.04f, ", Math.abs(var.get(GRB.DoubleAttr.X)));
             }
-            writer.printf("%.04f]\n", model.getVar(datiPb.getK() - 1).get(GRB.DoubleAttr.X));
+
+            // Ciclo sulle var di slack
+            for (int i = 0; i < datiPb.getM() - 1; i++) {
+                writer.printf("%.04f, ", Math.abs(model.getConstr(i).get(GRB.DoubleAttr.Slack)));
+            }
+            writer.printf("%.04f]\n", Math.abs(model.getConstr(datiPb.getM() - 1).get(GRB.DoubleAttr.Slack)));
+
 
 
             // Stampa risposta quesito 2
             writer.println("\nQUESITO II:");
 
-            // Variabili original in base o meno
+            // Variabili originali in base o meno
             writer.print("varibili in base: [");
-            for (int i = 0; i < datiPb.getK() - 1; i++) {
-                writer.print(model.getVarByName(String.format("x%d", i + 1))
-                        .get(GRB.IntAttr.VBasis) == 0 ? "1, " : "0, ");
+            for (GRBVar var : model.getVars()) {
+                writer.print(var.get(GRB.IntAttr.VBasis) == 0 ? "1, " : "0, ");
             }
-            writer.print(model.getVarByName(String.format("x%d", datiPb.getK() - 1))
-                    .get(GRB.IntAttr.VBasis) == 0 ? "1]\n" : "0]\n");
+            // Variabili slack in base o meno
+            for (int i = 0; i < datiPb.getM() - 1; i++) {
+                writer.print(model.getConstr(i).get(GRB.IntAttr.CBasis) == 0 ? "1, " : "0, ");
+            }
+            writer.print(model.getConstr(datiPb.getM() - 1)
+                    .get(GRB.IntAttr.CBasis) == 0 ? "1]\n" : "0]\n");
+
 
             // CCR
             writer.print("coefficienti di costo ridotto: [");
-            for (int i = 0; i < datiPb.getK() - 1; i++) {
-                writer.printf("%.04f, ", model.getVar(i).get(GRB.DoubleAttr.RC));
+            // Var originali
+            for (GRBVar var : model.getVars()) {
+                writer.printf("%.04f, ", Math.abs(var.get(GRB.DoubleAttr.RC)));
             }
-            writer.printf("%.04f]\n", model.getVar(datiPb.getK() - 1).get(GRB.DoubleAttr.RC));
+            // Var slack
+            for (int i = 0; i < datiPb.getM() - 1; i++) {
+                writer.printf("%.04f, ", Math.abs(model.getConstr(i).get(GRB.DoubleAttr.Pi)));
+            }
+            writer.printf("%.04f]\n", Math.abs(model.getConstr(datiPb.getM() - 1).get(GRB.DoubleAttr.Pi)));
+
 
             // Soluzione ottima multipla
             writer.print("soluzione ottima multipla: ");
             // Controllo se c'è una var non in base con CCR nullo
             boolean multipla = false;
+
             // Ciclo su tutte le var, guardo tra quelle non in base
             // se loro CCR è nullo
+
+            // Per var originali
             for (GRBVar var : model.getVars()) {
                 if (var.get(GRB.IntAttr.VBasis) != 0) {
                     if (var.get(GRB.DoubleAttr.RC) == 0.) {
@@ -79,13 +99,26 @@ public class RisposteQuesiti {
                     }
                 }
             }
+            //Per var di slack
+            for (GRBConstr constr : model.getConstrs()) {
+                if (constr.get(GRB.IntAttr.CBasis) != 0) {
+                    if (constr.get(GRB.DoubleAttr.Pi) == 0.) {
+                        multipla = true;
+                        break;
+                    }
+                }
+            }
+
             writer.println(multipla ? "Sì" : "No");
+
 
             // Soluzione ottima degenere
             writer.print("soluzione ottima degenere: ");
             // Controllo se c'è una var in base nulla.
             boolean degenere = false;
+
             // Ciclo su tutte le var, guardo tra quelle in base se nulle
+            // Per var originali
             for (GRBVar var : model.getVars()) {
                 if (var.get(GRB.IntAttr.VBasis) == 0) {
                     if (var.get(GRB.DoubleAttr.X) == 0.) {
@@ -94,7 +127,17 @@ public class RisposteQuesiti {
                     }
                 }
             }
+            // Per var di slack
+            for (GRBConstr constr : model.getConstrs()) {
+                if (constr.get(GRB.IntAttr.CBasis) == 0) {
+                    if (constr.get(GRB.DoubleAttr.Slack) == 0.) {
+                        degenere = true;
+                        break;
+                    }
+                }
+            }
             writer.println(degenere ? "Sì" : "No");
+
 
             // Vincoli al vertice all'ottimo
             writer.print("vincoli vertice ottimo: ");
@@ -107,6 +150,8 @@ public class RisposteQuesiti {
                 }
             }
             writer.println(vincoliOttimo);
+
+
 
             // Stampa risposta quesito 3
             writer.println("\nQUESITO III:");

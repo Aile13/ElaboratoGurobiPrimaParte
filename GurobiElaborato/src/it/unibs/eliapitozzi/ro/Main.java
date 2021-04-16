@@ -6,8 +6,7 @@ import it.unibs.eliapitozzi.ro.fileoutput.RisposteQuesiti;
 
 public class Main {
 
-    private static final String PROBLEM_FILE_LP =
-            "GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp";
+    private static final String PROBLEM_FILE_LP = "problema.lp";
 
     public static void main(String[] args) {
         try {

@@ -13,12 +13,13 @@ import java.util.regex.Pattern;
  */
 public class DatiProblema {
 
-    private static final String DATA_FILE_PATH = "GurobiElaborato/fileForniti/istanza_singolo55.txt";
-    private static final String MODEL_FILE_PATH = "GurobiElaborato/src/it/unibs/eliapitozzi/ro/defproblema/problema.lp";
+    private static final String DATA_FILE_PATH = "istanza_singolo55.txt";
+    private static final String MODEL_FILE_PATH = "problema.lp";
 
     /**
      * h, n, g, omega, teta, tau e la lista computer sono forniti dal testo.
      * k è numero di var originali del pb.
+     * m è numero di vincoli del pb, anche in forma standard.
      */
     List<ComputerModel> reteComputer = new ArrayList<>();
     private int h;
@@ -28,6 +29,7 @@ public class DatiProblema {
     private double teta;
     private int tau;
     private int k;
+    private int m;
 
     /**
      * Costruisce l'istanza dalla lettura del file fornito.
@@ -38,6 +40,10 @@ public class DatiProblema {
         // k è il numero di variabili originali del problema
         // Calcolato sommando al numero di var decisionali associato ai pc la var w
         k = reteComputer.size() + 1;
+
+        // m è il numero di vincoli del pb in forma standard
+        // Calcolato con la formula in funz del numero di PC: 4n + 1
+        m = 4 * n + 1;
 
         elaboraFileModelloLP();
     }
@@ -72,7 +78,7 @@ public class DatiProblema {
             // Vincolo w >= xi
             for (int i = 0; i < n; i++) {
                 String label = String.format("  c_di_w_e_x%d: ", i + 1);
-                w.printf(label + "w - x%d >= 0\n", i + 1);
+                w.printf(label + "w - x%d >= 0\n", i + 1, i + 1);
             }
 
             // Salto riga tra un tipo di vincolo e un altro
@@ -83,7 +89,7 @@ public class DatiProblema {
                 String labelEstrMin = String.format("  c_di_x%d_e_omega: ", i + 1);
                 String labelEstrMax = String.format("  c_di_x%d_e_teta: ", i + 1);
 
-                w.printf(labelEstrMin + "x%d - %.02f >= 0\n", i + 1, omega);
+                w.printf(labelEstrMin + "x%d >= %.02f\n", i + 1, omega);
                 w.printf(labelEstrMax + "x%d <= %.02f\n", i + 1, teta);
             }
 
@@ -122,7 +128,7 @@ public class DatiProblema {
             // Aggiungo intervallo di validita variabili xi, tra 0 e 100, perchè percentuale
             w.println("Bounds");
             for (int i = 0; i < n; i++) {
-                w.printf("  0,0 <= x%d <= 100,0\n", i + 1);
+                w.printf("  0.0 <= x%d <= 100.0\n", i + 1);
             }
 
             // Salto riga
@@ -199,6 +205,12 @@ public class DatiProblema {
                 ", omega=" + omega +
                 ", teta=" + teta +
                 ", tau=" + tau +
+                ", k=" + k +
+                ", m=" + m +
                 '}';
+    }
+
+    public int getM() {
+        return m;
     }
 }
