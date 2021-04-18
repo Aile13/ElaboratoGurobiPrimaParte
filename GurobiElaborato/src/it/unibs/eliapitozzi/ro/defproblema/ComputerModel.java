@@ -1,11 +1,18 @@
 package it.unibs.eliapitozzi.ro.defproblema;
 
 /**
+ * Model di un singolo pc.
+ *
  * @author Elia
  */
 public class ComputerModel {
-    private double alfa;
-    private double beta;
+    private final double alfa;
+    private final double beta;
+
+    public ComputerModel(double alfa, double beta) {
+        this.alfa = alfa;
+        this.beta = beta;
+    }
 
     public double getAlfa() {
         return alfa;
@@ -13,11 +20,6 @@ public class ComputerModel {
 
     public double getBeta() {
         return beta;
-    }
-
-    public ComputerModel(double alfa, double beta) {
-        this.alfa = alfa;
-        this.beta = beta;
     }
 
     @Override

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="ElaboratoGurobiPrimaParte:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/ElaboratoGurobiPrimaParte_jar</output-path>
+  <artifact type="jar" name="gruppo55:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/gruppo55_jar</output-path>
     <root id="archive" name="ElaboratoGurobiPrimaParte.jar">
       <element id="module-output" name="GurobiElaborato" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../../gurobi911/win64/lib/gurobi.jar" path-in-jar="/" />

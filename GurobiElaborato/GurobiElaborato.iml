@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gurobi" level="application" />
+    <orderEntry type="library" name="ejml" level="application" />
   </component>
 </module>

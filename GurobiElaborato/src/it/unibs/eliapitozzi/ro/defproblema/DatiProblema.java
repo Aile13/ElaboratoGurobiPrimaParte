@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Legge file fornito e costruisce il modello in formato lp.
+ * Legge file txt fornito e costruisce il modello in formato lp.
  *
  * @author Elia
  */
@@ -28,11 +28,12 @@ public class DatiProblema {
     private double omega;
     private double teta;
     private int tau;
-    private int k;
-    private int m;
+
+    private final int k;
+    private final int m;
 
     /**
-     * Costruisce l'istanza dalla lettura del file fornito.
+     * Costruisce l'istanza di modello dalla lettura del file fornito.
      * E elabora il corrispondente problema in formato lp.
      */
     public DatiProblema() {
@@ -46,10 +47,6 @@ public class DatiProblema {
         m = 4 * n + 1;
 
         elaboraFileModelloLP();
-    }
-
-    public int getN() {
-        return n;
     }
 
     public int getK() {
@@ -81,8 +78,10 @@ public class DatiProblema {
                 w.printf(label + "w - x%d >= 0\n", i + 1, i + 1);
             }
 
+
             // Salto riga tra un tipo di vincolo e un altro
             w.println();
+
 
             // Vincolo estremi percentuali forniti per ogni xi, entro omega e teta
             for (int i = 0; i < n; i++) {
@@ -93,8 +92,10 @@ public class DatiProblema {
                 w.printf(labelEstrMax + "x%d <= %.02f\n", i + 1, teta);
             }
 
+
             // Salto riga tra un tipo di vincolo e un altro
             w.println();
+
 
             // Vincolo per percentuale totale, tutte le xi insieme danno 100%
             w.print("  c_delle_xi_somma_delle_percentuali:");
@@ -103,8 +104,10 @@ public class DatiProblema {
             }
             w.printf(" x%d = 100,0\n", n);
 
+
             // Salto riga tra un tipo di vincolo e un altro
             w.println();
+
 
             // Vincolo temporale, tempo di esecuzione massimo ammesso
             double totDatiInGB = h * g * 1000;
@@ -122,8 +125,10 @@ public class DatiProblema {
                 w.printf(label + "%.02f x%d <= %d\n", coef, i + 1, tau);
             }
 
+
             // Salto riga tra un tipo di vincolo e un altro
             w.println();
+
 
             // Aggiungo intervallo di validita variabili xi, tra 0 e 100, perchè percentuale
             w.println("Bounds");

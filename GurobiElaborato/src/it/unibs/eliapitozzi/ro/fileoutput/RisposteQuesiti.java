@@ -2,6 +2,7 @@ package it.unibs.eliapitozzi.ro.fileoutput;
 
 import gurobi.*;
 import it.unibs.eliapitozzi.ro.defproblema.DatiProblema;
+import org.ejml.simple.SimpleMatrix;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Scrive il file txt con le risposte ai quesiti
  *
- * @author Elia
+ * @author Elia Pitozzi
  */
 public class RisposteQuesiti {
     private static final String PATH_ANSWER_FILE = "risposte_gruppo55.txt";
@@ -38,7 +39,7 @@ public class RisposteQuesiti {
             writer.println("QUESITO I:");
             writer.printf("funzione obiettivo = %.04f\n", model.get(GRB.DoubleAttr.ObjVal));
 
-            // Ciclo sui primi k elementi del vettore vars, ovvero le mie var originali
+            // Ciclo sui k elementi del vettore vars, ovvero le mie var originali
             writer.print("soluzione di base ottima: [");
             // Ciclo sulle var originali
             for (GRBVar var : model.getVars()) {
@@ -52,12 +53,12 @@ public class RisposteQuesiti {
             writer.printf("%.04f]\n", Math.abs(model.getConstr(datiPb.getM() - 1).get(GRB.DoubleAttr.Slack)));
 
 
-
             // Stampa risposta quesito 2
             writer.println("\nQUESITO II:");
 
-            // Variabili originali in base o meno
+            // Variabili in bose
             writer.print("varibili in base: [");
+            // Variabili originali in base o meno
             for (GRBVar var : model.getVars()) {
                 writer.print(var.get(GRB.IntAttr.VBasis) == 0 ? "1, " : "0, ");
             }
@@ -152,9 +153,40 @@ public class RisposteQuesiti {
             writer.println(vincoliOttimo);
 
 
-
             // Stampa risposta quesito 3
-            writer.println("\nQUESITO III:");
+            //writer.println("\nQUESITO III:");
+
+            // Estraggo matrice A, m x ( k + m ), vincoli x variabili pb in f. standard
+            SimpleMatrix a = new SimpleMatrix(datiPb.getM(), datiPb.getK() + datiPb.getM());
+            for (int i = 0; i < a.numRows(); i++) {
+                for (int nVar = 0; nVar < model.getRow(model.getConstr(i)).size(); nVar++) {
+                    int j = model.getRow(model.getConstr(i)).getVar(nVar).index();
+                    a.set(i, j, model.getCoeff(model.getConstr(i), model.getVar(j)));
+                }
+                char sense = model.getConstr(i).get(GRB.CharAttr.Sense);
+                double coeff;
+                if (sense == '>') {
+                    coeff = -1.;
+                } else {
+                    coeff = 1.;
+                }
+                a.set(i, datiPb.getK() + i, coeff);
+            }
+
+            // Estraggo matrice b, m x 1
+            SimpleMatrix b = new SimpleMatrix(datiPb.getM(), 1);
+            for (int i = 0; i < a.numRows(); i++) {
+                b.set(i, 0, model.getConstr(i).get(GRB.DoubleAttr.RHS));
+            }
+
+            // Estraggo matrice C, 1 x ( k + m )
+            SimpleMatrix c = new SimpleMatrix(1 , datiPb.getK() + datiPb.getM());
+            for (int i = 0; i < datiPb.getK(); i++) {
+                c.set(0, i, model.getVar(i).get(GRB.DoubleAttr.RC));
+            }
+            for (int i = 0; i < datiPb.getM(); i++) {
+                c.set(0, datiPb.getK() + i, Math.abs(model.getConstr(i).get(GRB.DoubleAttr.Pi)));
+            }
 
 
             // Chiudo writer

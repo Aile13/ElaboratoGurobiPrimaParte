@@ -4,6 +4,12 @@ import gurobi.*;
 import it.unibs.eliapitozzi.ro.defproblema.DatiProblema;
 import it.unibs.eliapitozzi.ro.fileoutput.RisposteQuesiti;
 
+/**
+ * Classe con entry-point del programma.
+ * Usa classi ausilarie e Gurobi per risoluzione pb.
+ *
+ * @author Elia Pitozzi
+ */
 public class Main {
 
     private static final String PROBLEM_FILE_LP = "problema.lp";
